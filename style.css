@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#001F59;
+}
+
+img{
+    max-width: 100%;
+}
+
+header {
+    background-color:#ffffff;
+    color: #FF0000;
+    padding: 20px 0;
+}
+
+.navegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.barra-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.barra-menu a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.cor-ai {
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #F7F7F7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rastreioPPN h2 {
+    color: #001F59;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.busca-rastreio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.busca-rastreio input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.busca-rastreio button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.busca-rastreio button:hover {
+    background-color: #218838;
+}
+
+.table-responsive {
+    overflow-x: auto; /* Permite rolagem horizontal */
+    margin-top: 20px;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th, .result-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.result-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.result-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.result-table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 600px) {
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .busca-rastreio {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .busca-rastreio input {
+        align-items: center;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .busca-rastreio button {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+    }
+
+    .result-table th, .result-table td {
+        font-size: 0.9em; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
