@@ -1,60 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <title>Enviaí Localizar</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="navegation">
-            <img src="./assets/logo.png" alt="logo-enviai">
-            <!-- <h1>Envi<span class="cor-ai">aí</span></h1>
-            <nav class="barra-menu">
-                <ul>
-                    <li>
-                        <a href="https://painel.enviai.com.br/login" target="_blank">Painel Envi<span class="cor-ai">aí</span></a>
-                    </li>
-                </ul>
-            </nav> -->
-        </div>
+      <div class="navegation">
+        <img src="./assets/logo.png" alt="logo-enviai" />
     </header>
 
-
-    
-    <p style="color: #000000;"></p>
+    <p style="color: #000000"></p>
 
     <main>
-        <section id="ppnObject">
-            <div class="container">
-                <div class="rastreioPPN">
-                    <h2>RASTREAR OBJETO</h2>
-                    <div class="busca-rastreio">
-                        <input type="text" id="trackingInput" placeholder="Digite o rastreio separado por vírgula">
-                        <button class="botao" id="trackButton">Rastrear</button>
-                        <button class="botao" id="DownloadButton">Download</button>
-                    </div>
-                    <div id="resultadoDiv" class="resultado"></div>
-                    <div class="table-responsive">
-                        <table id="resultTable" class="result-table">
-                            <thead>
-                                <tr>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                    </div>
-                </div>
+      <section id="ppnObject">
+        <div class="container">
+          <div class="rastreioPPN">
+            <h2>RASTREAR OBJETO</h2>
+            <div class="busca-rastreio">
+              <input
+                type="text"
+                id="trackingInput"
+                placeholder="Digite o rastreio separado por vírgula"
+              />
+              <button class="botao" id="trackButton">Rastrear</button>
+              <button class="botao" id="DownloadButton">Download</button>
+              <button class="botao" id="DownloadStatus">Status</button>
             </div>
-        </section>
+            <div id="resultadoDiv" class="resultado"></div>
+            <div class="table-responsive">
+              <table id="resultTable" class="result-table">
+                <thead>
+                  <tr></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
